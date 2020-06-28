@@ -16,11 +16,11 @@ const Order = require('./order')
  * for example, we can say: const {User} = require('../db/models')
  * instead of: const User = require('../db/models/user')
  */
-Products.belongsToMany(Category, {
-  through: 'products_categories',
-  constraints: false
-})
-Category.belongsToMany(Products, {through: 'products_categories'})
+// Products.belongsToMany(Category, {
+//   through: 'products_categories',
+//   constraints: false
+// })
+// Category.belongsToMany(Products, {through: 'products_categories'})
 
 Order.belongsTo(User, {
   as: 'Current',
@@ -32,6 +32,6 @@ User.belongsTo(Order)
 module.exports = {
   User,
   Products,
-  Category,
+  // Category,
   Order
 }

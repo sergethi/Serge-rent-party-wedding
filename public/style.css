@@ -1,5 +1,6 @@
 body {
   font-family: sans-serif;
+  background-color: lightsteelblue;
 }
 
 a {
@@ -19,3 +20,145 @@ form div {
   margin: 1em;
   display: inline-block;
 }
+
+html,
+body {
+  margin: 0;
+}
+
+#App {
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+#page-wrap {
+  text-align: center;
+  overflow: auto;
+  top: 45%;
+  position: relative;
+}
+
+.bm-item {
+  display: inline-block;
+
+  /* Our sidebar item styling */
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #d1d1d1;
+  transition: color 0.2s;
+}
+
+.bm-item:hover {
+  color: white;
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #000;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 60px 0 60px;
+} */
+nav {
+  text-align: right;
+  padding: 20px 60px 0 60px;
+}
+
+.productsContainer {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 300px;
+  height: 700px;
+  text-align: left;
+  background-color: lightgray;
+}
+.productsContainer img {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+}
+.productsContainer:hover {
+  border: 1px solid #777;
+}
+.desc {
+  text-align: left;
+  white-space: normal;
+  width: 200px;
+  height: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 1px solid #000000;
+}
+
+/* .positioning{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+
+} */
+.bold {
+  font-weight: bold;
+}
+.bold:hover {
+  color: brown;
+}
+
+/* .img{
+  width: 200px;
+  height: 200px;
+  height: auto; */
+/* border: 1px solid black;
+} */

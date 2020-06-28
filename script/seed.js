@@ -11,20 +11,20 @@ async function seed() {
     User.create({name: 'Cody', email: 'cody@email.com', password: '123'}),
     User.create({name: 'Murphy', email: 'murphy@email.com', password: '123'})
   ])
-  const categories = await Promise.all([
-    Category.create({
-      name: 'Tents'
-    }),
-    Category.create({
-      name: 'Seating'
-    }),
-    Category.create({
-      name: 'Lighting'
-    }),
-    Category.create({
-      name: 'Sound'
-    })
-  ])
+  // const categories = await Promise.all([
+  //   Category.create({
+  //     name: 'Tents'
+  //   }),
+  //   Category.create({
+  //     name: 'Seating'
+  //   }),
+  //   Category.create({
+  //     name: 'Lighting'
+  //   }),
+  //   Category.create({
+  //     name: 'Sound'
+  //   })
+  // ])
   const orders = await Promise.all([
     Order.create({
       recipientName: 'Cody',
@@ -68,7 +68,8 @@ async function seed() {
 
       quantity: 5,
       imageURL:
-        'https://images-na.ssl-images-amazon.com/images/I/4188vpaXfUL._AC_.jpg'
+        'https://images-na.ssl-images-amazon.com/images/I/4188vpaXfUL._AC_.jpg',
+      category: 'Tents'
     }),
     Products.create({
       name:
@@ -81,7 +82,8 @@ async function seed() {
                   ✔ QUALITY GUARANTEED: To ensure a 100% customer satisfaction, we provide 30 days free trail use and 10 years warranty. We are confident to stand behind our product and would like to guarantee you a best shopping experience.`,
       quantity: 15,
       imageURL:
-        'https://images-na.ssl-images-amazon.com/images/I/51Ehird8X2L._AC_SL1000_.jpg'
+        'https://images-na.ssl-images-amazon.com/images/I/51Ehird8X2L._AC_SL1000_.jpg',
+      category: 'Seating'
     }),
     Products.create({
       name:
@@ -94,7 +96,8 @@ async function seed() {
                   Great Decoration for Everyday use: It can not only be used as Christmas decor, party weddings backdrop, but also perfect for everyday use such as hanging it down across tapestry, sheers, drapes, glass slide door, plain wall or even installed as lighted divider of 2 rooms, and you can keep it up all year round after the holiday season.`,
       quantity: 30,
       imageURL:
-        'https://images-na.ssl-images-amazon.com/images/I/71ck5ku%2BY2L._AC_SL1000_.jpg'
+        'https://images-na.ssl-images-amazon.com/images/I/71ck5ku%2BY2L._AC_SL1000_.jpg',
+      category: 'Lightning'
     }),
     Products.create({
       name:
@@ -107,7 +110,8 @@ async function seed() {
                     ♪PROFESSIONAL MUSIC EXPERIENCE: Using high-quality MDF materials for the two subwoofers, this design can reduce resonance distortion and accurate response. The 8 tweeters, 8 mid-tweeters and 2 subwoofers are design to provide clear and deep stereo sound. This PA system speaker set includes two telescoping speaker poles which make the overall height adjustable from 68 inch to 86 inch to ensure good acoustics. There are built-in handles on the side, easily to lift and transport the subwoofers.`,
       quantity: 4,
       imageURL:
-        'https://images-na.ssl-images-amazon.com/images/I/6121gDyIe8L._AC_SL1200_.jpg'
+        'https://images-na.ssl-images-amazon.com/images/I/6121gDyIe8L._AC_SL1200_.jpg',
+      category: 'Sound'
     })
     //   Products.create({
     //     name: '',
@@ -238,12 +242,12 @@ async function seed() {
     //   }),
   ])
 
-  await Promise.all([
-    products[0].addCategory(categories[0]),
-    products[1].addCategory(categories[1]),
-    products[2].addCategory(categories[2]),
-    products[3].addCategory(categories[3])
-  ])
+  // await Promise.all([
+  //   products[0].addCategory(categories[0]),
+  //   products[1].addCategory(categories[1]),
+  //   products[2].addCategory(categories[2]),
+  //   products[3].addCategory(categories[3])
+  // ])
   // await Promise.all([
   //   //orders[0].setUser(users[1]),
   //   orders[1].setUser(users[1]),
@@ -253,7 +257,7 @@ async function seed() {
 
   console.log(`seeded ${users.length} users`)
   console.log(`seeded ${products.length} products`)
-  console.log(`seeded ${categories.length} categories `)
+  // console.log(`seeded ${categories.length} categories `)
   console.log(`seeded ${orders.length} orders `)
   console.log(`seeded successfully`)
 }
