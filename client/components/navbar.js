@@ -23,7 +23,8 @@ const Navbar = props => {
   useEffect(() => {
     getCart()
   }, [])
-  console.log('HERERE', props)
+
+  //console.log('HERERE', props)
   // let inCart =
 
   //   props.cart.reduce((a, b) => {
@@ -45,12 +46,12 @@ const Navbar = props => {
           <Link to="/products">Products</Link>
           <Link to="/cart">
             <IconButton aria-label="cart">
-              <StyledBadge badgeContent={0} color="secondary">
+              <StyledBadge badgeContent={props.cart} color="secondary">
                 {/* <ShoppingCartTwoToneIcon /> */}
                 <ShoppingCartIcon />
               </StyledBadge>
             </IconButton>
-            <span>{props.cart.cart}</span>
+            {/* <span>{props.cart.cart}</span> */}
           </Link>
         </div>
       </nav>
@@ -66,7 +67,7 @@ const mapState = state => {
   console.log('STATE', state)
   return {
     isLoggedIn: !!state.user.id,
-    cart: state
+    cart: state.cart.cart
   }
 }
 
