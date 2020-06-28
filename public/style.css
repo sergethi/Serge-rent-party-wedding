@@ -110,8 +110,13 @@ body {
   padding: 50px 60px 0 60px;
 } */
 nav {
-  text-align: right;
+  text-align: center;
   padding: 20px 60px 0 60px;
+  font-weight: bolder;
+}
+nav :hover {
+  font-size: x-large;
+  color: teal;
 }
 
 .productsContainer {
@@ -156,93 +161,42 @@ nav {
   color: brown;
 }
 
-/* .img{
-  width: 200px;
+.side-menu-head {
+  background-color: lightsalmon;
+}
+.home-page {
+  text-align: center;
+  color: rgb(66, 5, 5);
+  text-shadow: yellow;
+  /* background-image: url('https://mauipride.org/wp-content/uploads/2013/12/New-Years-Eve-Party-Slider-Background.jpg') */
+}
+
+/* home gallery*/
+
+.flex-container {
+  flex-direction: row;
+  display: -webkit-flex;
+  display: flex;
+
+  width: 100%;
+  height: 100px;
+  align-content: center;
+  flex-flow: row wrap;
+  margin: auto;
+  margin-top: 220px;
+}
+
+.flex-item {
+  background-color: lightblue;
+  width: 40%;
   height: 200px;
-  height: auto; */
-/* border: 1px solid black;
-} */
-
-.container-products {
-  max-width: 650px;
-  justify-content: space-around;
-  margin: 0 auto;
-  margin-top: 50px;
+  margin: 10px;
+  order: 1;
+  align-content: center;
+  margin: 30px;
+  color: rgb(228, 37, 11);
+  font-weight: bold;
 }
-
-.container-products {
-  font-size: 25px;
-  color: blue;
-  margin-left: 10px;
-  margin-right: 10px;
-  cursor: pointer;
+.flex-item :hover {
+  border: 3px dotted orangered;
 }
-.product-header {
-  width: 100px;
-  max-width: 650px;
-  display: flex;
-  justify-content: flex-start;
-  border-bottom: 4px solid lightgray;
-  margin-right: 0 auto;
-}
-.product-title {
-  width: 45%;
-}
-
-.price {
-  width: 15%;
-  border-bottom: 1px solid lightgray;
-  display: flex;
-  align-items: center;
-}
-.total {
-  width: 10px;
-  border-bottom: 1px solid lightgray;
-  display: flex;
-  align-items: center;
-}
-.prduct {
-  width: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  border-bottom: 1px solid lightgray;
-  padding: 10px 0;
-}
-.product {
-  width: 100px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.basketTotalContainer {
-  display: flex;
-  justify-content: flex-end;
-  width: 100px;
-  padding: 10px 0;
-}
-
-.basketTotalTitle {
-  width: 30px;
-}
-.basketTotal {
-  width: 10px;
-}
-
-/* @media(max-width:50px){
-  nav h2{
-    width: 100px;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  .sm-hide{
-    display:none;
-  }
-  .product,
-  .product-header{
-    justify-content:center
-  }
-  .basketTotalContainer{
-    padding-right: 8px;
-  }
-} */

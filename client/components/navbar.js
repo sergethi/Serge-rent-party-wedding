@@ -39,7 +39,6 @@ const Navbar = props => {
       <nav>
         <div className="nave">
           {/* The navbar will show these links before you log in */}
-          <h1>BOILERMAKER</h1>
           <Link to="/home">Home</Link>
           <Link to="/login">Login</Link>
           <Link to="/signup">Sign Up</Link>

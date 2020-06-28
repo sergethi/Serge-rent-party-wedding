@@ -112,104 +112,201 @@ async function seed() {
       imageURL:
         'https://images-na.ssl-images-amazon.com/images/I/6121gDyIe8L._AC_SL1200_.jpg',
       category: 'Sound'
+    }),
+    Products.create({
+      name:
+        '10x30 Heavy Duty Canopy Gazebo Outdoor Party Wedding Tent Pavilion with 6 Removable Side Walls',
+      price: 169.99,
+      description: `Elegant white design style and straight leg design; Rust&corrosion resistant 32mm/0.6mm thick powder coated steel, Waterproof&Anti-UV 120g Polyethylene cover/sidewalls
+              Heavy-duty bungee cord straps, eyelets and Velcro fastener/ High strength PE joint fitting
+              6 Transparent PVC church windows offer a good flow of light/Removable sidewalls for greater versatility and ventilation`,
+      quantity: 15,
+      imageURL:
+        'https://images-na.ssl-images-amazon.com/images/I/81F-SD0hRlL._AC_SL1500_.jpg',
+      category: 'Tents'
+    }),
+    Products.create({
+      name:
+        'TentandTable 20-Foot by 30-Foot Heavy Duty 14-Ounce Vinyl White Canopy Pole Tent Set with Storage Bag for Weddings, Parties, and Events',
+      price: 100,
+      description: `PREMIUM QUALITY - Heavy Duty 14 vinyl, designed to withstand the wear and tear of being set up and taken down multiple times each year
+                  SIZE - 20 ft x 30 ft, ideal for approximately 66 people to sit down and eat
+                  LIGHTWEIGHT - Can be packed up and setup without a truck or trailer and minimal tools`,
+      quantity: 7,
+      imageURL:
+        'https://images-na.ssl-images-amazon.com/images/I/515COLHZweL._AC_.jpg',
+      category: 'Tents'
+    }),
+    Products.create({
+      name:
+        'Peaktop Outdoor 16X32 Party Tent Heavy Duty Wedding Tent Outdoor Gazebo Event Shelter Canopy with Carry Bags',
+      price: 100,
+      description: `✅【UPGRADED Galvanised Framework】UPGRADED Galvanised Heavy Duty and Rust Resistant Framework: Top quality galvanised steel framework and metal corner joint makes our marquee more durable .
+                  ✅【GROUND BARS】Ground Bars make tent more stability and more wind-resistant on the ground.
+                  ✅【“U” Type Pegs】Additional “U” Type Pegs for better anchoring down the canopy, make it more stable
+                  ✅【Good Ventilation(each sidewall panel is removable)】10 removable sidewalls & 2 zipper doors for cross`,
+      quantity: 1,
+      imageURL:
+        'https://images-na.ssl-images-amazon.com/images/I/71kluAFvozL._AC_SL1100_.jpg',
+      category: 'Tents'
+    }),
+    Products.create({
+      name:
+        'Outdoor Waterproof Gazebo Canopy Tent, Portable Wedding Party Tent,Patio Parties Tent BBQ Shelter Canopy Gazebo for Outdoor',
+      price: 50,
+      description: `🏕️DURABLE DESIGN OF CONSTRUCTION:Heavy-duty painted iron frame, smart workmanship with reasonable design ensures good structure and ruggedness. The rustproof frame is excellent in ensuring that the tent lasts for a long time. New PE corner joints are heavy-duty and reinforced to make sure that the tent is stable. Each tent is equipped with 4 wind ropes and 8 tent pegs thus you can secure the tent firmly on the ground. The whole frame is designed for stability and security.
+                      🏕️THICK POLYETHYLENE CLOTH: High-class PE cloth which is thick and durable for long service life. The corners of the canopy are reinforced that more protection will be provided. What’s more, the PE material is easy to clean and maintain, so you just need to wipe it gently with a damp cloth every once in a while.`,
+      quantity: 6,
+      imageURL:
+        'https://images-na.ssl-images-amazon.com/images/I/71lT6Wnc5XL._AC_SL1000_.jpg',
+      category: 'Tents'
+    }),
+    Products.create({
+      name:
+        'Quictent Privacy 10x20 EZ Pop Up Canopy Tent Party Tent Outdoor Event Gazebo Waterproof with Roller Bag- 4 Colors',
+      price: 100,
+      description: `QUICK RELEASE BUTTON: Each leg with quick release button, very easy to folding, no pinching of fingers.
+                    WATERPROOF & ANTI-UV: Fabric made of 420D oxford fabric, with PU-coating, waterproof and UPF 50+ Anti-UV sun protection.
+                    FULLY ASSEMBLED POP-UP FRAME: Our pop-up canopy with durable anti-corrosion resistant powder-coated steel frame, folding type, very easy to set up. No loose parts, No tools needed.`,
+      quantity: 5,
+      imageURL:
+        'https://images-na.ssl-images-amazon.com/images/I/81UwVuJzMML._AC_SL1100_.jpg',
+      category: 'Tents'
+    }),
+    Products.create({
+      name:
+        'Lifetime 80160 Commercial Height Adjustable Folding Utility Table, 4 Feet, White Granite',
+      price: 25,
+      description: `Adjusts to 24-inch children's height, 29-inch table height and 36-inch countertop height
+                  Superior strength and durability. Backed by a ten-year limited warranty
+                  Rust-resistant powder coated steel frame. UV-Protected High-Density Polyethylene (HDPE) Top`,
+      quantity: 150,
+      imageURL:
+        'https://images-na.ssl-images-amazon.com/images/I/61QibkX3WUL._AC_SL1500_.jpg',
+      category: 'Seating'
+    }),
+    Products.create({
+      name:
+        'EventStable Titan Series Beige Folding Card Table and Beige Fabric Metal Folding Chair Set - 5 Pieces',
+      price: 100,
+      description: `Can be used indoors or outdoors
+                  Lightweight and folds up easily
+                  Powder coated legs are protected from scratches
+                  5 total pieces
+                  Free Shipping to Commercial Addresses`,
+      quantity: 10,
+      imageURL:
+        'https://images-na.ssl-images-amazon.com/images/I/71g4tIQYHTL._AC_SL1500_.jpg',
+      category: 'Seating'
+    }),
+    Products.create({
+      name:
+        'Sandinrayli Black Plastic Folding Chair Outdoor Patio Garden Wedding Party Event Furniture Chairs 8-Pack',
+      price: 100,
+      description: `√ PORTABLE AND CONVENIENT: It can be manually folded and locked in an upright position, folds flat and compact for easy storage.
+                      √ PERFECT FOR EVENTS: Set of 8 chair- ideal for businesses, offices, churches, schools, government, banquet halls, game halls, the black elegant design make them suitable for most situation,and makes it easy to throw parties and celebrate special occasions with friends and family.`,
+      quantity: 250,
+      imageURL:
+        'https://images-na.ssl-images-amazon.com/images/I/71hVRsuhhrL._AC_SL1200_.jpg',
+      category: 'Seating'
+    }),
+    Products.create({
+      name:
+        'MIBOTE Globe String Lights, 55ft 112 LEDs Colored Fairy Lights Waterproof UL Listed Plug in String Lights for Outdoor Indoor Bedroom Patio Garden Party',
+      price: 10,
+      description: `【DECORATIVE STRING LIGHT】Our sting lights is 55ft/16.7m, 112 LEDs, RGBY (red, green, blue, yellow), non-friable, not overheat. One broken will not affect others.
+                    【REMOTE & ADAPTER CONTROL】2 Switch modes are available for the led globe string lights, you could select what you want. UL Listed power supply, safe use in your home.
+                    【8 LIGHTING MODES】Combination, in wave, sequential, slo-glo, chasing/flash, slow fade, twinkle/flash, steady on, change different modes according to different occasions.`,
+      quantity: 200,
+      imageURL:
+        'https://images-na.ssl-images-amazon.com/images/I/81hbq2Qc7NL._AC_SL1500_.jpg',
+      category: 'Lightning'
+    }),
+    Products.create({
+      name:
+        'SIEBIRD LED Color Changing Solar Wind Chime Light,Solar Star Wind Chimes Outdoor,Solar Powered LED Hanging Lamp Mobile Waterproof Romantic Wind Bell Light for Outdoor Garden Party Decoration',
+      price: 20,
+      description: `Solar Wind Chimes Color Changing: Our magical star solar powered wind chimes will keep you in a good mood. At night, they will glow in fantastic colors, including red, yellow, green, orange, purple, red and blue. These beautiful star wind chimes will change colorfully in your garden, changing from one color to another in a calm and gentle way, making your house more romantic. They add magic to the dark night, a colorful magic decoration.
+                  Energy-Saving & Eco-Friendly: Just set the switch which is located underneath of solar panel to "ON" position for charging. It automatically charges during the day and lights up at night. The upgraded solar panel absorbs energy quickly and can last for 6-8 hours after being fully charged. Solar power is designed to save energy without wiring, installation, long-term energy saving and becoming environmentally friendly has never been easier.`,
+      quantity: 150,
+      imageURL:
+        'https://images-na.ssl-images-amazon.com/images/I/61iGx3zHAKL._AC_SL1000_.jpg',
+      category: 'Lightning'
+    }),
+    Products.create({
+      name:
+        '20W Color LED Flood Lights, RGB LED Flood Light with Remote Control, IP66 Waterproof Outdoor Indoor Color Changing Floodlight, Dimmable Wall Washer Light for Party, Garden, Landscape Lighting',
+      price: 30,
+      description: `★1.RGB projection lights come in 16 different colors and four optional modes, strobe lights and lightboard, and you can adjust the brightness.Suitable for indoor and outdoor, wedding, courtyard, lawn, stage and other places.This handy spotlight remembers the color and brightness of the last setting.
+              ★2.This product adopts IP66 waterproof material.You needn't worry about the weather any more.Please note that the lamp should not be immersed in water or put into water for a long time.With an efficient aluminum body,
+              ★3.You can change the color according to your own needs to create a different atmosphere.Four main colors: red, green, blue and white.A total of 16 different colors, providing colorful lighting stage garden, home, hotel, landscape and so on
+              ★4The product USES widely: applies to the garden, the party, the street, the underground garage, the stage, the building, the courtyard and so on landscape illumination`,
+      quantity: 30,
+      imageURL:
+        'https://images-na.ssl-images-amazon.com/images/I/51Q-WemHspL._AC_.jpg',
+      category: 'Lightning'
+    }),
+    Products.create({
+      name:
+        'SANSI 70W RGB LED Flood Light, IP66 Waterproof Indoor Outdoor Color Changing LED Wall Washer Light, 16 Colors 4 Modes Dimmable Floodlight for Party, Garden, Landscape',
+      price: 60,
+      description: `16 COLORS & 4 MODES: Using the remote control provided, 16 different colors including daylight color are available. 5 dimmable settings can meet your brightness needs. It also offers 4 types of color changing patterns, including flash, strobe, fade and smooth. All the functions can meet all your needs for decorating a Halloween party, stage, landscape and security lighting
+                  Sensitive Remote Sensor & Memory Function: With 32 Keys the IR remote control brings the RGB floodlight to life! (remote control Sensing distance:33~49ft). One remote can control several lights. The 70W RGB LED floodlights remember the color and mode you set last time, so there is no need to reset if the light is powered on again. Enjoy the colorful light decorations on children’s birthdays, Christmas celebrations, Halloween or wedding parties`,
+      quantity: 15,
+      imageURL:
+        'https://images-na.ssl-images-amazon.com/images/I/61t%2BqnUnbIL._AC_SL1000_.jpg',
+      category: 'Lightning'
+    }),
+    Products.create({
+      name:
+        'Starter Dj System - 2100 WATTS - Connect your Laptop, iPod via Bluetooth, USB, MP3s or Cds! 10 Speakers, Amp, Mixer/Cd Player, Mic, Headphones.',
+      price: 250,
+      description: `Adkins Professional Audio 10" DJ Speakers
+                    2100 Watt Pyle Pro Professional DJ Amplifier
+                    CDMB-5000 Dual CD Player / DJ Audio Mixer Combo w/ Bluetooth
+                    Microphone & Headphones Included
+                    A ready-to-go DJ Package with Everything you need to DJ.`,
+      quantity: 3,
+      imageURL:
+        'https://images-na.ssl-images-amazon.com/images/I/71VHYFtMNiL._AC_SL1000_.jpg',
+      category: 'Sound'
+    }),
+    Products.create({
+      name: 'Peavey Audio Performer Pack Complete Portable PA System',
+      price: 400,
+      description: `Includes PVi® 4B mixerTwo PVi® 10 10" speaker enclosures Two PVi® 100 dynamic cardioid microphones Two speaker stands`,
+      quantity: 2,
+      imageURL:
+        'https://images-na.ssl-images-amazon.com/images/I/71Z6SqojhAL._AC_SL1500_.jpg',
+      category: 'Sound'
+    }),
+    Products.create({
+      name: 'Odyssey Black Label Flight Zone (FZGSPIDDJSXBL)',
+      price: 236,
+      description: `All Black Anodized and Powder Coated Hardware
+                  Patented Gliding Laptop Platform
+                  Removable V-cut Front Access Panel
+                  Exclusive Patent Pending Bevel Foam Interior
+                  Heavy-Duty Ball Corners
+                  Recessed Handle and Latches
+                  Plenty of Cable Management Underneath & Behind the Controller`,
+      quantity: 2,
+      imageURL:
+        'https://images-na.ssl-images-amazon.com/images/I/71hJfIcUrxL._AC_SL1500_.jpg',
+      category: 'Sound'
+    }),
+    Products.create({
+      name:
+        'Gemini ES Series ES-210MXBLU Professional Audio Portable PA System with Two 10" Passive Speakers and Microphone Included, 8 Channel Mixer, 4 Line/Mic Inputs',
+      price: 400,
+      description: `FULLY IMMERSIVE MULTIMEDIA AUDIO: The ES-210MXBLU Serves As An Integrated MP3 player with Connections For USB, SD, and Bluetooth. The 600W Peak, 150W RMS Class D Built-In Amplifier Will Motivate You To Share Your Sound
+                  COMPLETE CONTROL: The ES-210MXBLU Portable PA Features An 8-Channel Powered Mixer with An On Board Digital Echo Effect. The Unit Also Houses Individual Bass and Treble Effects and Volume Controls for 4 Line/Mic Inputs To Completely Customize Your Sound`,
+      quantity: 3,
+      imageURL:
+        'https://images-na.ssl-images-amazon.com/images/I/91l5ztcR97L._AC_SL1500_.jpg',
+      category: 'Sound'
     })
-    //   Products.create({
-    //     name: '',
-    //     price: ,
-    //     description: '',
-    //     quantity: '',
-    //     imageURL: ''
-    //   }), Products.create({
-    //     name: '',
-    //     price: '',
-    //     description: '',
-    //     quantity: '',
-    //     imageURL: ''
-    //   }), Products.create({
-    //     name: '',
-    //     price: '',
-    //     description: '',
-    //     quantity: '',
-    //     imageURL: ''
-    //   }), Products.create({
-    //     name: '',
-    //     price: '',
-    //     description: '',
-    //     quantity: '',
-    //     imageURL: ''
-    //   }), Products.create({
-    //     name: '',
-    //     price: '',
-    //     description: '',
-    //     quantity: '',
-    //     imageURL: ''
-    //   }), Products.create({
-    //     name: '',
-    //     price: '',
-    //     description: '',
-    //     quantity: '',
-    //     imageURL: ''
-    //   }), Products.create({
-    //     name: '',
-    //     price: '',
-    //     description: '',
-    //     quantity: '',
-    //     imageURL: ''
-    //   }), Products.create({
-    //     name: '',
-    //     price: '',
-    //     description: '',
-    //     quantity: '',
-    //     imageURL: ''
-    //   }), Products.create({
-    //     name: '',
-    //     price: '',
-    //     description: '',
-    //     quantity: '',
-    //     imageURL: ''
-    //   }), Products.create({
-    //     name: '',
-    //     price: '',
-    //     description: '',
-    //     quantity: '',
-    //     imageURL: ''
-    //   }), Products.create({
-    //     name: '',
-    //     price: '',
-    //     description: '',
-    //     quantity: '',
-    //     imageURL: ''
-    //   }), Products.create({
-    //     name: '',
-    //     price: '',
-    //     description: '',
-    //     quantity: '',
-    //     imageURL: ''
-    //   }), Products.create({
-    //     name: '',
-    //     price: '',
-    //     description: '',
-    //     quantity: '',
-    //     imageURL: ''
-    //   }), Products.create({
-    //     name: '',
-    //     price: '',
-    //     description: '',
-    //     quantity: '',
-    //     imageURL: ''
-    //   }), Products.create({
-    //     name: '',
-    //     price: '',
-    //     description: '',
-    //     quantity: '',
-    //     imageURL: ''
-    //   }), Products.create({
-    //     name: '',
-    //     price: '',
-    //     description: '',
-    //     quantity: '',
-    //     imageURL: ''
-    //   }), Products.create({
+    //Products.create({
     //     name: '',
     //     price: '',
     //     description: '',
