@@ -27,20 +27,20 @@ class AllProducts extends React.Component {
   }
   render() {
     let products = this.props.products
-    //console.log('herere', products)
+    // console.log('herere', products)
     return products.length > 0 ? (
-      <div>
+      <div className="positioning">
         {/* <div><SideBar /></div> */}
         <div id="App">
           <SideBar pageWrapId="page-wrap" outerContainerId="App" />
 
           <div id="page-wrap">
-            <h1 className="side-menu-head">SCROLL DOWN TO SEE OUR PRODUCTS</h1>
+            <h1 className="side-menu-head">OUR PRODUCTS</h1>
           </div>
         </div>
 
         {/* limit */}
-        <div className="positioning">
+        <div>
           {products.map(product => (
             <div className="productsContainer" key={product.id}>
               <img className="img" src={product.imageURL} />

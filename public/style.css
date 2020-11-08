@@ -1,9 +1,4 @@
-body {
-  font-family: sans-serif;
-  background-color: lightsteelblue;
-}
-
-a {
+/* a {
   text-decoration: none;
 }
 
@@ -24,6 +19,9 @@ form div {
 html,
 body {
   margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background-color: lightsteelblue;
 }
 
 #App {
@@ -36,16 +34,30 @@ body {
   overflow: auto;
   top: 45%;
   position: relative;
+} */
+/* html {
+  position:relative; 
+  
+} */
+
+body {
+  font-family: sans-serif;
+  /* background-color: white; */
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
+
+/* Our sidebar item styling */
 
 .bm-item {
   display: inline-block;
-
-  /* Our sidebar item styling */
   text-decoration: none;
   margin-bottom: 10px;
-  color: #d1d1d1;
-  transition: color 0.2s;
+  color: #373a47;
+  transition: color 1.2s;
 }
 
 .bm-item:hover {
@@ -56,8 +68,8 @@ body {
   position: fixed;
   width: 36px;
   height: 30px;
-  left: 36px;
-  top: 36px;
+  left: 10px;
+  top: 18px;
 }
 
 /* Color/shape of burger icon bars */
@@ -65,7 +77,7 @@ body {
   background: #373a47;
 }
 
-/* Position and sizing of clickable cross button */
+/* Position and sizing of clickable cross button   crooss xx*/
 .bm-cross-button {
   height: 24px;
   width: 24px;
@@ -73,12 +85,12 @@ body {
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #bdc3c7;
+  background: black;
 }
 
 /* General sidebar styles */
 .bm-menu {
-  background: #000;
+  background: white;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
@@ -90,7 +102,7 @@ body {
 
 /* Wrapper for item list */
 .bm-item-list {
-  color: #b8b7ad;
+  color: black;
 }
 
 /* Styling of overlay */
@@ -110,22 +122,65 @@ body {
   padding: 50px 60px 0 60px;
 } */
 nav {
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-around; */
+  top: 0px;
+  width: 100%;
+  height: 80px;
+  background-color: white;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+
+  /* display: inline-block;
+  text-align: right;
+  vertical-align: bottom; */
+}
+nav ul li {
+  display: inline;
+
+  /* text-decoration: none;
+  margin-right: 2em;
+  font-weight: bolder; */
+}
+nav ul li a {
+  /* display: block; */
+  vertical-align: bottom;
+  color: black;
   text-align: center;
-  padding: 20px 60px 0 60px;
+  padding: 39px 16px;
+  text-decoration: none;
   font-weight: bolder;
 }
-nav :hover {
+nav ul li a.cart {
+  position: absolute;
+  margin-top: 100px;
+  /* font-size: 55px; */
+  /* background-color: lawngreen; */
+}
+/* nav :hover {
   font-size: x-large;
   color: teal;
-}
+} */
 
+/* PRODUCTS CONTAINER */
+.positioning {
+  /* margin-left: 0px; */
+  background-color: rosybrown;
+}
 .productsContainer {
-  margin: 5px;
+  margin-left: 45px;
+  margin-top: 20px;
+
   border: 1px solid #ccc;
   float: left;
   width: 300px;
-  height: 700px;
-  text-align: left;
+  height: 650px;
+  text-align: center;
   background-color: lightgray;
 }
 .productsContainer img {
@@ -163,6 +218,7 @@ nav :hover {
 
 .side-menu-head {
   background-color: lightsalmon;
+  text-align: center;
 }
 .home-page {
   text-align: center;
@@ -199,4 +255,20 @@ nav :hover {
 }
 .flex-item :hover {
   border: 3px dotted orangered;
+}
+
+/* Footeerrrrrrrr */
+.footer {
+  position: relative;
+  margin-top: auto;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  /* height: 100px; */
+  /* height: 80px; */
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  flex: 0 0 50px; /*or just height:50px;*/
 }

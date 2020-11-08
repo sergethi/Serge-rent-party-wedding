@@ -35,14 +35,25 @@ const Navbar = props => {
   //   }, 0)
 
   return (
-    <div>
-      <nav>
-        <div className="nave">
-          {/* The navbar will show these links before you log in */}
-          <Link to="/home">Home</Link>
-          <Link to="/login">Login</Link>
-          <Link to="/signup">Sign Up</Link>
-          <Link to="/products">Products</Link>
+    // <div>
+    <nav>
+      {/* <div className="nave"> */}
+      {/* The navbar will show these links before you log in */}
+      <ul>
+        <li>
+          <a href="/home">Home</a>
+        </li>
+        <li>
+          <a href="/login">Login</a>
+        </li>
+        <li>
+          <a href="/signup">Sign Up</a>
+        </li>
+        <li>
+          <a href="/products">Products</a>
+        </li>
+
+        <li className="cart">
           <Link to="/cart">
             <IconButton aria-label="cart">
               <StyledBadge badgeContent={props.cart} color="secondary">
@@ -52,10 +63,13 @@ const Navbar = props => {
             </IconButton>
             {/* <span>{props.cart.cart}</span> */}
           </Link>
-        </div>
-      </nav>
-      <hr />
-    </div>
+        </li>
+      </ul>
+
+      {/* </div> */}
+    </nav>
+
+    // </div>
   )
 }
 
