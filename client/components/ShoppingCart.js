@@ -70,50 +70,52 @@ const ShoppingCart = ({cart}) => {
   // console.log('IS THERE A USER', props)
 
   return (
-    <Container>
-      <Grid container item xs={12} justify="center" alignItems="center">
-        <ShoppingCartRoundedIcon fontSize="large" />
-        <h1> My Shopping Cart</h1>
-      </Grid>
-      <TableContainer component={Paper}>
-        <Table aria-label="simple table">
-          <TableHead>
-            <TableRow className={classes.head}>
-              <TableCell align="center" className={classes.whiteColor}>
-                Keyboard
-              </TableCell>
-              <TableCell align="center" className={classes.whiteColor}>
-                Keyboard Name
-              </TableCell>
-              <TableCell align="center" className={classes.whiteColor}>
-                Price
-              </TableCell>
-              <TableCell align="center" className={classes.whiteColor}>
-                QTY
-              </TableCell>
-              <TableCell align="center" className={classes.whiteColor}>
-                Amount
-              </TableCell>
-              <TableCell align="center" className={classes.whiteColor} />
-            </TableRow>
-          </TableHead>
+    <div>
+      <Container className="cart-container">
+        <Grid container item xs={12} justify="center" alignItems="center">
+          <ShoppingCartRoundedIcon fontSize="large" />
+          <h1> My Shopping Cart</h1>
+        </Grid>
+        <TableContainer component={Paper}>
+          <Table aria-label="simple table">
+            <TableHead>
+              <TableRow className={classes.head}>
+                <TableCell align="center" className={classes.whiteColor}>
+                  Keyboard
+                </TableCell>
+                <TableCell align="center" className={classes.whiteColor}>
+                  Keyboard Name
+                </TableCell>
+                <TableCell align="center" className={classes.whiteColor}>
+                  Price
+                </TableCell>
+                <TableCell align="center" className={classes.whiteColor}>
+                  QTY
+                </TableCell>
+                <TableCell align="center" className={classes.whiteColor}>
+                  Amount
+                </TableCell>
+                <TableCell align="center" className={classes.whiteColor} />
+              </TableRow>
+            </TableHead>
 
-          <div className="container-products">
-            <div className="product-header">
-              <h5 className="product-title">PRODUCT</h5>
-              <h5 className="price sm-hide">PRICE</h5>
-              <h5 className="quantity">QUANTITY</h5>
-              <h5 className="total">TOTAL</h5>
+            <div className="container-products">
+              <div className="product-header">
+                <h5 className="product-title">PRODUCT</h5>
+                <h5 className="price sm-hide">PRICE</h5>
+                <h5 className="quantity">QUANTITY</h5>
+                <h5 className="total">TOTAL</h5>
+              </div>
+              <div className="products">{/* {productsArr} */}</div>
+              <div className="basketTotalContainer">
+                <h4 className="baskettotalTitle">Basket Total</h4>
+                <h4 className="basketTotal">${cart.cartCost}</h4>
+              </div>
             </div>
-            <div className="products">{/* {productsArr} */}</div>
-            <div className="basketTotalContainer">
-              <h4 className="baskettotalTitle">Basket Total</h4>
-              <h4 className="basketTotal">${cart.cartCost}</h4>
-            </div>
-          </div>
-        </Table>
-      </TableContainer>
-    </Container>
+          </Table>
+        </TableContainer>
+      </Container>
+    </div>
   )
 }
 

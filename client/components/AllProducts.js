@@ -29,7 +29,7 @@ class AllProducts extends React.Component {
     let products = this.props.products
     // console.log('herere', products)
     return products.length > 0 ? (
-      <div className="positioning">
+      <div className="container">
         {/* <div><SideBar /></div> */}
         <div id="App">
           <SideBar pageWrapId="page-wrap" outerContainerId="App" />
