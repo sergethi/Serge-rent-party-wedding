@@ -2,15 +2,18 @@ import React from 'react'
 
 import {Navbar, Footer} from './components'
 import Routes from './routes'
+import {withRouter} from 'react-router-dom'
 
-const App = () => {
+const App = ({location}) => {
   return (
     <div>
-      <Navbar />
+      {location.pathname !== '/' && <Navbar />}
+      {/* <Navbar /> */}
       <Routes />
-      <Footer />
+      {location.pathname !== '/' && <Footer />}
+      {/* <Footer /> */}
     </div>
   )
 }
 
-export default App
+export default withRouter(App)
