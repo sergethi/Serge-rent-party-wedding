@@ -24,16 +24,10 @@ class Routes extends Component {
 
     return (
       <div>
-        {/* <AnimatePresence exitBeforEnter> */}
-        <Switch location={location} key={location.pathname}>
-          <Route exact path="/" component={Landing} />
-          <Route exact path="/home" component={Home} />
-        </Switch>
-        {/* </AnimatePresence> */}
-
         <Switch>
           {/* Routes placed here are available to all visitors */}
-
+          <Route exact path="/" component={Landing} />
+          <Route exact path="/home" component={Home} />
           <Route exact path="/products" component={AllProducts} />
           <Route exact path="/products/:id" component={OneProduct} />
           <Route exact path="/categories" component={SideBar} />

@@ -15,45 +15,40 @@ const Home = props => {
     >
       {props => (
         <div style={props}>
-          <div className="home-page">
-            <div className="home-page">
+          <div>
+            <div className="home-head">
               <h1>Welcome To SERGE Event & Party Rentals</h1>
-              <h2>
+              {/* <h2>
                 RENT Tents | Chairs | Tables | Lightning | Speackers | Dj
                 Equipments
               </h2>
-              <h3>Contact Us 646-852-5930 & sergeEventRental@gmail.com</h3>
+              <h3>Contact Us 646-852-5930 & sergeEventRental@gmail.com</h3> */}
             </div>
-            {/* <div>
-      <img className="home-page" src = "https://mauipride.org/wp-content/uploads/2013/12/New-Years-Eve-Party-Slider-Background.jpg"/>
-    </div> */}
+            <h2 className="home-middle-text">We are renting</h2>
+
             <div className="flex-container">
               <div className="flex-item">
-                Tents<img
+                <p>Tents</p>
+                <img
                   src="https://media-api.theknot.com/images/0b4ad1c3-0c73-41a8-ab72-4989d618a052"
-                  width="400"
-                  height="200"
+                  width="647"
+                  height="250"
                 />
               </div>
               <div className="flex-item">
-                Lightning<img
-                  src="https://i0.wp.com/lightsupeventlighting.com/wp-content/uploads/2017/11/IMG_2796-e1543392151566.jpg?fit=3024%2C2268"
-                  width="400"
-                  height="200"
-                />
+                <p>Lightning</p>
+                <img src="/gallery-lightning.jpg" width="647" height="250" />
               </div>
               <div className="flex-item">
-                Tables<img
-                  src="https://www.givdo.com/wp-content/uploads/2015/06/beach-wedding-table-decorations-1.jpg"
-                  width="400"
-                  height="200"
-                />
+                <p>Tables</p>
+                <img src="/table-1701733_1920.jpg" width="647" height="250" />
               </div>
               <div className="flex-item">
-                Sound<img
+                <p>Sound</p>
+                <img
                   src="https://i.ytimg.com/vi/tPZjasYw6_A/maxresdefault.jpg"
-                  width="400"
-                  height="200"
+                  width="647"
+                  height="250"
                 />
               </div>
             </div>
