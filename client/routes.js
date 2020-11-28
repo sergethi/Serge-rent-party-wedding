@@ -10,6 +10,7 @@ import SideBar from './components/SideBar'
 import ShoppingCart from './components/ShoppingCart'
 import Home from './components/Home'
 import {AnimatePresence, motion} from 'framer-motion'
+import Contact from './components/Contact'
 
 /**
  * COMPONENT
@@ -32,7 +33,7 @@ class Routes extends Component {
           <Route exact path="/products/:id" component={OneProduct} />
           <Route exact path="/categories" component={SideBar} />
           <Route exact path="/cart" component={ShoppingCart} />
-
+          <Route exact path="/contact" component={Contact} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/signup" component={Signup} />
           {isLoggedIn && (

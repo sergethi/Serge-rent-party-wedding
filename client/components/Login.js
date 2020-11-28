@@ -2,7 +2,7 @@ import React from 'react'
 import {connect} from 'react-redux'
 import PropTypes from 'prop-types'
 import {auth} from '../store'
-import {FaUserPlus} from 'react-icons/fa'
+import {FaUnlockAlt} from 'react-icons/fa'
 
 /**
  * COMPONENT
@@ -11,18 +11,13 @@ const AuthForm = props => {
   const {name, displayName, handleSubmit, error} = props
 
   return (
-    <div className="Signup-form-container">
-      <form onSubmit={handleSubmit} name={name} className="Signup-form">
-        <div className="signup-icon">
-          <FaUserPlus />
+    <div className="Login-form-container">
+      <form onSubmit={handleSubmit} name={name} className="Login-form">
+        <div className="login-icon">
+          <FaUnlockAlt />
         </div>
-        <h2>Sign-up</h2>
-        <div className="top-label-signup">
-          <label htmlFor="name">User Name</label>
-          <br />
-          <input name="name" type="text" />
-        </div>
-        <div>
+        <h2>Login</h2>
+        <div className="top-label">
           <label htmlFor="email">Email</label>
           <br />
           <input name="email" type="text" />
@@ -56,18 +51,10 @@ const AuthForm = props => {
  *   function, and share the same Component. This is a good example of how we
  *   can stay DRY with interfaces that are very similar to each other!
  */
-// const mapLogin = state => {
-//   return {
-//     name: 'login',
-//     displayName: 'Login',
-//     error: state.user.error
-//   }
-// }
-
-const mapSignup = state => {
+const mapLogin = state => {
   return {
-    name: 'signup',
-    displayName: 'Sign Up',
+    name: 'login',
+    displayName: 'Login',
     error: state.user.error
   }
 }
@@ -84,8 +71,7 @@ const mapDispatch = dispatch => {
   }
 }
 
-// export const Login = connect(mapLogin, mapDispatch)(AuthForm)
-export const Signup = connect(mapSignup, mapDispatch)(AuthForm)
+export const Login = connect(mapLogin, mapDispatch)(AuthForm)
 
 /**
  * PROP TYPES

@@ -9,6 +9,7 @@ import Badge from '@material-ui/core/Badge'
 import {withStyles} from '@material-ui/core/styles'
 import IconButton from '@material-ui/core/IconButton'
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart'
+import {BsSpeaker} from 'react-icons/bs'
 
 const StyledBadge = withStyles(theme => ({
   badge: {
@@ -37,6 +38,12 @@ const Navbar = props => {
   return (
     // <div>
     <nav>
+      <di className="business-name">
+        <a>
+          <BsSpeaker />
+        </a>
+        <a>Serge-Event-Rentals</a>
+      </di>
       {/* <div className="nave"> */}
       {/* The navbar will show these links before you log in */}
       <ul>
@@ -47,10 +54,17 @@ const Navbar = props => {
           <a href="/products">Products</a>
         </li>
         <li>
-          <a href="/login">Login</a>
+          <a href="/contact">Contact</a>
         </li>
         <li>
-          <a href="/signup">Sign Up</a>
+          <a href="/login" className="log-button">
+            Login
+          </a>
+        </li>
+        <li>
+          <a href="/signup" className="sign-button">
+            Sign Up
+          </a>
         </li>
 
         <li className="cart">
