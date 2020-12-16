@@ -5,8 +5,8 @@
  */
 export {default as Navbar} from './navbar'
 export {default as UserHome} from './user-home'
-export {default as Footer} from './footer'
-export {default as Landing} from './landing'
+export {default as Footer} from './Footer'
+export {default as Landing} from './Landing'
 export {Signup} from './auth-form'
 // export {Login, Signup} from './auth-form'
 export {Login} from './Login'
