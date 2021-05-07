@@ -35,7 +35,11 @@ class AllProducts extends React.Component {
           <SideBar pageWrapId="page-wrap" outerContainerId="App" />
 
           <div id="page-wrap">
-            <h1 className="side-menu-head">OUR PRODUCTS</h1>
+            <h1 className="side-menu-head">
+              <marquee direction="right">
+                OUR PRODUCTS &nbsp;&nbsp; OUR PRODUCTS &nbsp;&nbsp; OUR PRODUCTS
+              </marquee>
+            </h1>
           </div>
         </div>
 

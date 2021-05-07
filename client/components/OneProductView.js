@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme => ({
     justifyContent: 'center',
     '& > *': {
       margin: theme.spacing(10),
-      width: theme.spacing(150),
+      width: theme.spacing(120),
       height: theme.spacing(16)
     }
   },
@@ -30,7 +30,7 @@ const useStyles = makeStyles(theme => ({
   },
   media: {
     height: 0,
-    paddingTop: '56.25%' // 16:9
+    paddingTop: '86.25%' // 16:9
   },
   expansion: {
     marginBottom: '10px'
@@ -42,10 +42,10 @@ export default function OneProductView(props) {
 
   return (
     <div className={classes.root}>
-      <Container maxWidth="lg">
+      <Container maxWidth="lg" style={{marginBottom: '100px'}}>
         <Paper elevation={2}>
-          <Grid container spacing={4}>
-            <Grid item className={classes.grid} xs={6}>
+          <Grid container spacing={4} style={{marginTop: 20}}>
+            <Grid item className={classes.grid} xs={5}>
               <CardMedia
                 className={classes.media}
                 image={props.product.imageURL}
@@ -53,10 +53,15 @@ export default function OneProductView(props) {
               />
             </Grid>
             <Grid item className={classes.grid} xs={6}>
-              <Typography variant="h3" color="textPrimary" gutterBottom>
+              <Typography variant="h5" color="textPrimary" gutterBottom>
                 {props.product.name}
               </Typography>
-              <Typography variant="h5" color="textPrimary" gutterBottom>
+              <Typography
+                variant="h5"
+                color="textPrimary"
+                gutterBottom
+                style={{color: 'green'}}
+              >
                 ${props.product.price}
               </Typography>
 

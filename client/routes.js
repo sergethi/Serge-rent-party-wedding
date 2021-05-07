@@ -24,7 +24,7 @@ class Routes extends Component {
     const {isLoggedIn, location} = this.props
 
     return (
-      <div>
+      <div className="app">
         <Switch>
           {/* Routes placed here are available to all visitors */}
           <Route exact path="/" component={Landing} />
