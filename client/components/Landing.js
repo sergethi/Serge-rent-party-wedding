@@ -11,14 +11,14 @@ function Landing() {
           <p>Start Right Here</p>{' '}
         </p>
 
-        <Box mt={15} ml={15} fS={50}>
+        <Box mt={15} ml={11} fS={50}>
           <Button
             variant="contained"
             color="primary"
             disableElevation
             style={{
               backgroundColor: 'orange',
-              fontSize: '40px',
+              fontSize: '28px',
               color: 'black'
             }}
             href="/home"

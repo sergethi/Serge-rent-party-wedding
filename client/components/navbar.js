@@ -39,10 +39,10 @@ const Navbar = props => {
     // <div>
     <nav>
       <di className="business-name">
-        <a>
+        <a href="/home">
           <BsSpeaker />
         </a>
-        <a>Serge-Event-Rentals</a>
+        <a href="/home">Serge-Event-Rentals</a>
       </di>
       {/* <div className="nave"> */}
       {/* The navbar will show these links before you log in */}

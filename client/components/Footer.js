@@ -8,17 +8,17 @@ function Footer() {
       <div className="social_links">
         <ul>
           <li>
-            <a href="mailto:sergethiti@gmail.com">
+            <a href="mailto:sergethiti@gmail.com" target="_blank" rel="noreferrer">
               <FaEnvelope />
             </a>
           </li>
           <li>
-            <a href="https://www.facebook.com/">
+            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
               <FaFacebookSquare />
             </a>
           </li>
           <li>
-            <a href="https://instagram.com/">
+            <a href="https://instagram.com/" target="_blank" rel="noreferrer">
               <FaInstagram />
             </a>
           </li>

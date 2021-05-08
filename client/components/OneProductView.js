@@ -80,7 +80,12 @@ export default function OneProductView(props) {
                 </ExpansionPanelDetails>
               </ExpansionPanel>
               <Tooltip title="ADD TO CART">
-                <Button variant="contained" size="small" color="primary">
+                <Button
+                  variant="contained"
+                  size="small"
+                  color="primary"
+                  onClick={() => this.handleClick(product)}
+                >
                   ADD TO <AddShoppingCartIcon />
                 </Button>
               </Tooltip>
