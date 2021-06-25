@@ -436,6 +436,7 @@ input {
 
 /* CARRRT PAGE */
 .cart-container {
+  margin-top: 90px;
   margin-bottom: 260px;
 }
 
@@ -534,5 +535,18 @@ input {
 
 /* RESPONSIVE**************************************************************** */
 
-@media screen and(max-width: 767px) {
+@media only screen and (max-width: 600px) {
+  .landing-page .landing-paragraph {
+    /* position: absolute; */
+    font-family: 'Abril Fatface', cursive;
+    margin-top: 40px;
+    color: rgb(53, 48, 48);
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-left: 30px;
+  }
+  .responsive {
+    margin-left: 30px;
+    background-color: #ccc;
+  }
 }
