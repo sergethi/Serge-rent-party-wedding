@@ -10,13 +10,6 @@ const useStyles = makeStyles({
       marginLeft: '30px',
       marginTop: '2px'
     }
-  },
-  buttonStyle: {
-    '@media (max-width: 600px)': {
-      fontSize: '5px',
-      color: 'red',
-      backgroundColor: 'white'
-    }
   }
 })
 

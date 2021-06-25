@@ -545,8 +545,42 @@ input {
     font-weight: bolder;
     margin-left: 30px;
   }
-  .responsive {
-    margin-left: 30px;
-    background-color: #ccc;
+  /* HOME */
+  .home-head {
+    height: 300px;
+  }
+  .home-head h1 {
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 170px;
+  }
+  .home-middle-text {
+    font-size: 20px;
+  }
+  .flex-container {
+    height: 100px;
+    flex-flow: nowrap;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    min-height: 0px;
+  }
+  .flex-item {
+    width: 100%;
+    height: 150px;
+    order: 2;
+    margin: 15px 0px 15px 0px;
+  }
+  .flex-item img {
+    display: none;
+  }
+  .flex-container.Myitem1 {
+  }
+  .item2 {
+    width: 100%;
+    height: 150px;
+  }
+  .item3 {
   }
 }

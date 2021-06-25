@@ -35,15 +35,15 @@ const Home = props => {
               height="250"
             />
           </div>
-          <div className="flex-item">
+          <div className="flex-item item2">
             <p>Lightning</p>
             <img src="/gallery-lightning.jpg" width="647" height="250" />
           </div>
-          <div className="flex-item">
+          <div className="flex-item item3">
             <p>Tables</p>
             <img src="/table-1701733_1920.jpg" width="647" height="250" />
           </div>
-          <div className="flex-item">
+          <div className="flex-item item4">
             <p>Sound</p>
             <img
               src="https://i.ytimg.com/vi/tPZjasYw6_A/maxresdefault.jpg"
