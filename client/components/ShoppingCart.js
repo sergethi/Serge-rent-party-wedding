@@ -74,17 +74,17 @@ const ShoppingCart = ({cart}) => {
       <Container className="cart-container">
         <Grid container item xs={12} justify="center" alignItems="center">
           <ShoppingCartRoundedIcon fontSize="large" />
-          <h1> My Shopping Cart</h1>
+          <h1> Shopping Cart</h1>
         </Grid>
         <TableContainer component={Paper}>
           <Table aria-label="simple table">
             <TableHead>
               <TableRow className={classes.head}>
                 <TableCell align="center" className={classes.whiteColor}>
-                  Keyboard
+                  Item
                 </TableCell>
                 <TableCell align="center" className={classes.whiteColor}>
-                  Keyboard Name
+                  Item Name
                 </TableCell>
                 <TableCell align="center" className={classes.whiteColor}>
                   Price

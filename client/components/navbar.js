@@ -38,12 +38,12 @@ const Navbar = props => {
   return (
     // <div>
     <nav>
-      <di className="business-name">
+      <div className="business-name">
         <a href="/home">
           <BsSpeaker />
         </a>
         <a href="/home">Serge-Event-Rentals</a>
-      </di>
+      </div>
       {/* <div className="nave"> */}
       {/* The navbar will show these links before you log in */}
       <ul>
