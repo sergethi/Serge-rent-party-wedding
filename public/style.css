@@ -397,7 +397,7 @@ input {
 }
 .login-icon {
   font-size: 30px;
-  color: brown;
+  color: rgb(0, 0, 0);
   text-align: center;
   margin-top: 17px;
 }
@@ -436,11 +436,13 @@ input {
 
 /* CARRRT PAGE */
 .cart-container {
+  margin-top: 90px;
   margin-bottom: 260px;
 }
 
 /* CONTACTTTTTT */
 .hero {
+  width: 100%;
   text-align: center;
   padding: 10%;
   color: #fff;
@@ -534,5 +536,216 @@ input {
 
 /* RESPONSIVE**************************************************************** */
 
-@media screen and(max-width: 767px) {
+@media only screen and (max-width: 600px) {
+  .landing-page .landing-paragraph {
+    /* position: absolute; */
+    font-family: 'Abril Fatface', cursive;
+    margin-top: 40px;
+    color: rgb(53, 48, 48);
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-left: 30px;
+  }
+  /* HOME */
+  .home-head {
+    height: 300px;
+  }
+  .home-head h1 {
+    font-size: 20px;
+    margin-left: 0px;
+    margin-right: 20px;
+    margin-top: 170px;
+    font: 30px;
+  }
+  .home-middle-text {
+    font-size: 20px;
+    margin-right: 70px;
+  }
+  .flex-container {
+    height: 100vh;
+    flex-flow: nowrap;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+  }
+  .flex-item1 {
+    background-image: url('https://media-api.theknot.com/images/0b4ad1c3-0c73-41a8-ab72-4989d618a052');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    order: 0;
+    margin: 15px 0px 15px 0px;
+  }
+  .flex-item2 {
+    background-image: url('/gallery-lightning.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    order: 0;
+    margin: 15px 0px 15px 0px;
+  }
+  .flex-item3 {
+    background-image: url('/table-1701733_1920.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    order: 0;
+    margin: 15px 0px 15px 0px;
+  }
+  .flex-item4 {
+    background-image: url('https://i.ytimg.com/vi/tPZjasYw6_A/maxresdefault.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    order: 0;
+    margin: 15px 0px 15px 0px;
+  }
+  .imgP {
+    background-color: rgb(31, 29, 29);
+    border: 2px solid rgb(31, 29, 29);
+    color: white;
+    width: 20%;
+    text-align: center;
+  }
+  /* CONTACT PAGE*/
+  .hero {
+    width: 100%;
+    height: 300px;
+  }
+  .hero h1 {
+    font-size: 27px;
+    margin-right: 90px;
+    margin-top: 100px;
+  }
+  .contact-flex-container {
+    flex-direction: column-reverse;
+  }
+  .left-container {
+    margin-right: 50px;
+    width: 100%;
+    height: 660px;
+  }
+
+  /* .form-address{
+      margin-right: 80px;
+    } */
+  .form-address a {
+    font-size: 25px;
+  }
+
+  /* .form-call{
+      margin-right: 80px;
+    } */
+  .form-call a {
+    font-size: 25px;
+  }
+
+  /* .form-envelop{
+      margin-right: 80px;
+    } */
+  .form-envelop a {
+    font-size: 25px;
+  }
+  .contact-form {
+    width: 100%;
+    height: 656px;
+    text-align: center;
+  }
+
+  /* FOOTER */
+  .footer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .footer p {
+    margin-left: 70px;
+    text-align: center;
+  }
+  .footer ul {
+    margin-top: -74px;
+    margin-right: 50px;
+  }
+  .footer .email_link {
+    font-size: 0.8rem;
+  }
+
+  .footer li a {
+    font-size: 1.8rem;
+  }
+
+  /* NAV BAR */
+  nav {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+  }
+  .business-name {
+    float: left;
+    margin-left: 20px;
+  }
+  .business-name a {
+    font-size: 28px;
+  }
+  nav ul {
+    margin-top: 0px;
+    background-color: #a5b6c8;
+  }
+  nav ul li a {
+    padding: 39px 6px;
+    font-size: 16px;
+  }
+
+  /* LOGIN & SIGN-UP PAGE */
+  .Login-form {
+    top: 20px;
+    margin-left: 15px;
+    width: 90%;
+    height: 90vh;
+  }
+  .label2 {
+    margin-left: 70px;
+  }
+  input {
+    margin-left: 70px;
+    width: 60%;
+  }
+  .button-log-sign {
+    margin-left: 150px;
+  }
+  .log-error {
+    margin-left: 110px;
+  }
+  .google-log {
+    margin-left: 110px;
+  }
+
+  .Signup-form {
+    top: 20px;
+    margin-left: 15px;
+    width: 90%;
+    height: 90vh;
+  }
+
+  /* PRODUCT PAGE */
+  .productsContainer {
+    width: 100%;
+    height: 100vh;
+    margin-left: 0px;
+  }
+  .side-menu-head {
+    margin-top: 120px;
+    font-size: 30px;
+  }
+  .productsContainer img {
+    width: 100%;
+  }
+  /* CART PAGE */
+  .cart-container {
+    margin-top: 150px;
+  }
 }
