@@ -12,9 +12,31 @@ const styles = theme => ({
       margin: theme.spacing(1)
     }
   },
-  area: {width: '50ch', marginBottom: '6ch'},
-  name: {width: '37ch', marginBottom: '6ch'},
-  email: {width: '37ch', marginBottom: '6ch'},
+  // area: {width: '50ch', marginBottom: '6ch'},
+  area: {
+    width: '50ch',
+    marginBottom: '6ch',
+    '@media (max-width: 600px)': {
+      width: '70%'
+    }
+  },
+  //name: {width: '37ch', marginBottom: '6ch'},
+  name: {
+    width: '37ch',
+    marginBottom: '6ch',
+    marginTop: '8ch',
+    '@media (max-width: 600px)': {
+      width: '70%'
+    }
+  },
+  //email: {width: '37ch', marginBottom: '6ch'},
+  email: {
+    width: '37ch',
+    marginBottom: '6ch',
+    '@media (max-width: 600px)': {
+      width: '70%'
+    }
+  },
 
   notchedOutline: {
     borderWidth: '1px',
@@ -24,7 +46,7 @@ const styles = theme => ({
     color: 'white'
   },
 
-  button: {color: 'red', backgroundColor: 'black'},
+  button: {color: 'white', backgroundColor: 'black', border: '1px solid white'},
 
   input: {
     color: 'white'
@@ -226,10 +248,10 @@ export default withStyles(styles)(Contact)
 
 {
   /* <h1>Contact Us </h1>
-     <form  onSubmit={this.handleSubmit}  className={classes.root} noValidate autoComplete="off" 
-      
+     <form  onSubmit={this.handleSubmit}  className={classes.root} noValidate autoComplete="off"
+
      >
-    
-    
+
+
    </form> */
 }
